@@ -1,0 +1,31 @@
+.top-image-wrapper {
+    /* background-image: url("images/room.jpg"); */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    height: 400px;
+    overflow: hidden;
+}
+
+.top-image-wrapper > img {
+    /* width: 100%;
+    height: 100%; */
+    height: auto;
+}
+
+.header-image-text-first {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 40px;
+}
+.header-image-text-second {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 17px;
+}

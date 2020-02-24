@@ -1,0 +1,38 @@
+/* slider-css  */
+.slideshow-container {
+    /* max-width: 100%;
+    margin: auto; */
+}
+
+.mySlides > img {
+    vertical-align: middle;
+    height: auto;
+    width: 100%;
+  
+}
+
+.slideshow-container > i {
+    top: 50%;
+    /* left: 0px; */
+    position: absolute;
+    width: 50px;
+    height: 20px;
+    background: rgba(255,255,255,0);
+    /* display: block; */
+    /* z-index: 1000; */
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.left-slide-arrow{
+    transform: matrix(1, 0, 0, 1, 30, -25);
+    left: 0%;
+}
+
+.right-slide-arrow{
+    transform: matrix(1, 0, 0, 1, -80, -25);
+    left: 100%;
+}
+/* slider-css end */

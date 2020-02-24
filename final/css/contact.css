@@ -1,0 +1,68 @@
+/* contact css  start*/
+
+legend{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+input[type=text], input[type="number"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  
+  /* WebKit desktop browsers add little up down arrows to number inputs called spinners. You can turn them off visually like this: */
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #fff;
+    color: black;
+    padding: 8px 70px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  
+  .form-container {
+    width: 80%;
+    margin-left: 195px;
+    padding: 20px;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 12%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+
+  /* .col-100 {
+    width: 74%;
+    margin: auto;
+} */

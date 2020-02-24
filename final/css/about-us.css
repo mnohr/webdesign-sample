@@ -1,0 +1,47 @@
+
+
+.text-wrapper{
+    width: 70%;
+    margin: auto;
+}
+
+.text-wrapper > h1 {
+    font-size: 35px;
+    padding: 10px;
+}
+
+.text-wrapper >  p {
+    line-height: 25px;
+    font-size: 18px;
+    padding: 10px;
+}
+.text-wrapper > a {
+    padding: 10px;
+    /* text-decoration: none; */
+    color: black;
+    font-size: 18px;
+}
+
+.text-wrapper > a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+
+.image-center{
+    width: 70%;
+    margin: auto;
+    padding: 10px;
+
+    }
+.image-center > img {
+    width: 100%;
+    height: auto;
+}
+
+
+.video-center > img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}

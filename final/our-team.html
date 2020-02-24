@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/breadcumb.css">
+    
+	<style type="text/css">
+
+.clearfix:after {
+    content:"\0020";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    overflow:hidden;
+}
+ 
+.clearfix {
+    display:block;
+    width: 80%; 
+    margin: auto;
+}
+
+.textbb {
+    margin: 5px;
+    width: auto;
+} 
+
+.paragraph{
+  text-align: left;
+  font-size: 16px; 
+  padding-right: 35px;
+}
+
+
+/*our-team-grid*/
+
+.picture-and-text-container{
+ width: 90%;
+ margin: auto;
+ display: grid;
+ grid-template-columns:auto auto auto auto;
+ justify-content: space-around;
+ grid-gap: 20px;
+}
+
+.img-wrappper{
+  width: 90%;
+  margin: auto;
+}
+
+.text-wrapper{
+  text-align: center;
+}
+
+.singleimage_heading{
+	font-size: 20px;
+  margin:0px;
+}
+
+.singleimg_pos{
+  font-size: 18px;
+  padding: 10px;
+  margin:0px;
+}
+
+.images{
+  height: auto;
+  width: 100%;
+  padding: 10px;
+
+}
+
+.singleimg_para{
+      padding: 5px;
+      margin:0px;
+    }
+
+  .more{
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 15px;
+  }
+
+  .more:hover{
+    text-decoration: none;
+    color: grey;
+  }
+
+
+
+@media screen and (max-width: 1000px){
+.picture-and-text-container {
+	/*background-color: blue;*/
+ 	  display: grid;
+    grid-template-columns: auto auto ;
+    text-align: center;
+ 	}
+}
+
+@media screen and (max-width: 768px){
+.picture-and-text-container {
+	/*background-color: green;*/
+ 	display: grid;
+  	grid-template-columns: auto;
+    text-align: center;
+ 	}
+
+ 	.singleimage_heading{
+ 	font-size: 20px;
+	text-align: center;
+		}
+}
+
+
+/*Contact Us*/
+
+* {
+  box-sizing: border-box;
+}
+
+legend{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+
+input[type=text], input[type="number"], input[type="email"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+
+/*WebKit desktop browsers add little up down arrows to number inputs called spinners. You can turn them off visually like this:*/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #fff;
+  color: black;
+  padding: 8px 70px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.form-container {
+  width: 80%;
+  margin-left: 195px;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 12%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .form-container {
+  width: 60%;
+  margin-left: 100px;
+  padding: 10px;
+}
+  .col-25, .col-75, input[type=submit] {
+    width: 80%;
+    margin-top: 0;
+  }
+}
+
+  </style>
+  
+  <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+	<div class="container-all">
+
+      <!-- navigation header  -->
+          <div class="second-row">
+                    <nav class="navbar navbar-custom nav-border">    
+                        <div class="header-title">
+                            <a class="site-brand" href="index.html"><img class="header-logo-img" src="images/Website-Logo.jpg" alt="logo"></a>
+                        </div>
+                        
+                        <!-- <div class="nav-menusfa"> -->
+                        <ul class="nav-menu">    
+                            <li class="main-list"><a href="index.html">Home</a></li>
+                            <li class="open-dropdown menu1 "><a class="menu-link" href="about-us.html">About Us</a>
+                                <ul class="dropdown-menu dropdown-content dropdown dropdown-list1 "  >
+                                    <li class="menu-item "><a href="our-team.html">Our Team</a></li>
+                                    <li class="menu-item "><a href="about-us.html" >About Us</a></li>
+                                    <li class="menu-item "><a href="our-products.html" >Kitchen Showroom</a></li>
+                                    <li class="menu-item "><a href="single_prod_page.html" >Design + Production</a></li>
+                                    <li class="menu-item "><a href="customer_review.html" >Customer Reviews</a></li>
+                                </ul>
+                            </li>
+                            <li class="open-dropdown menu2 "><a class="menu-link2" href="#">Sample</a>
+                                <ul class="dropdown-menu dropdown-content dropdown dropdown-list2"  >
+                                    <li class="menu-item "><a href="our-team.html">Our Team</a></li>
+                                    <li class="menu-item "><a href="about-us.html" >About</a></li>
+                                    <li class="menu-item "><a href="our-products.html" >Kitchen Showroom</a></li>
+                                    <li class="menu-item "><a href="single_prod_page.html" >Design + Pro</a></li>
+                                    <li class="menu-item "><a href="customer_review.html" >Customer Reviews</a></li>
+                                </ul>
+                            </li>
+                            <li class="open-dropdown menu3 "><a  class="menu-link3" href="#">Portfolio</a>
+                                <ul class="dropdown-menu dropdown-content dropdown dropdown-list3"  >
+                                    <li class="menu-item "><a href="our-team.html"> Our Team</a></li>
+                                    <li class="menu-item "><a href="about-us.html" >About Us</a></li>
+                                    <li class="menu-item "><a href="our-products.html" >Kitchen Showroom</a></li>
+                                    <li class="menu-item "><a href="single_prod_page.html" >Design Production</a></li>
+                                    <li class="menu-item "><a href="customer_review.html" >Customer Reviews</a></li>
+                                </ul>
+                            </li>
+                            <li class="open-dropdown menu4 "><a class="menu-link4" href="#">News</a>
+                                <ul class="dropdown-menu dropdown-content dropdown dropdown-list4"  >
+                                    <li class="menu-item "><a href="our-team.html" > Team</a></li>
+                                    <li class="menu-item "><a href="about-us.html" >About Us</a></li>
+                                    <li class="menu-item "><a href="our-products.html" > Showroom</a></li>
+                                    <li class="menu-item "><a href="single_prod_page.html" >Production</a></li>
+                                    <li class="menu-item "><a href="customer_review.html" >Customer Reviews</a></li>
+                                </ul>
+                            </li>
+                            <li class="open-dropdown menu5 " > <a class="menu-link5" href="#">Contact</a>
+                                <ul class="dropdown-menu dropdown-content dropdown dropdown-list5"  >
+                                    <li class="menu-item "><a href="#" >Contact Us</a></li>
+                                    <li class="menu-item "><a href="#" >Other Sample</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+              <!-- </div> -->
+            </nav>
+
+            <nav class="navbar-mob">
+              <div class="menu-btn">  
+                <!-- <i class="fa fa-bars" id="bar">menu</i> -->
+                <img class="fa-bars"  id="bar" src="images/bars-solid.svg" alt="bar-icon">
+                <!-- <i class="fa fa-times" id="cross">cancel</i> -->
+                <img  class="fa-times" id="cross" src="images/times-solid.svg" alt="cross-bar">
+            </div>
+            </nav>
+        </div>
+        <!-- navigation header  close-->
+
+
+
+        <div class="top-image-wrapper">
+            <img src="images/room.jpg" alt="room-image" style="width:100%; "> 
+            <div class="header-image-text-first">OUR TEAM</div>
+            <div class="header-image-text-second">CESAR NYC KITCHENS</div>
+        </div>
+
+		<div class="clearfix">
+			<h2>Our Team at Cesar NYC Kitchens</h2>
+		
+		<p class="paragraph">Meet our team at our Cesar NYC Kitchen Flagship Store in Flatiron District, Manhattan. Find out more about our senior kitchen designers, Cesar management, technical drawers and marketing team. Read more about our Cesar NYC kitchen designers to get an idea of their backgrounds and who you will be working with.</p>
+		</div>
+
+		<!-- Our team Grid-->
+		<main class="picture-and-text-container">
+   <div class="div1"> 
+    <div style="width: 75%;     margin: auto;">
+        <div class="img-wrapper">
+            <img class="images" src="our-team-img/gil.jpg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h2 class="singleimage_heading">Gil Kovalsky</h2>
+          <h4 class="singleimg_pos">General Manager</h4>
+          <p class="singleimg_para">Gil is the General Manager at the Cesar NYC Flagship Store. He looks after the business strategy as well as the establishment of the Cesar brand…</p>
+          <p class="more">READ MORE</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="div2"> 
+    <div style="width: 75%;     margin: auto;">
+        <div class="img-wrapper">
+            <img class="images" src="our-team-img/kobi.jpg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h2 class="singleimage_heading">Kobi Aharon</h2>
+          <h4 class="singleimg_pos">Chief Design Officer</h4>
+          <p class="singleimg_para">Kobi is our Chief Design Officer and also overlooks our multi-unit projects at Cesar NYC. He has over 20 years’ design experience, 10 years’ experience…</p>
+          <p class="more">READ MORE</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="div3"> 
+    <div style="width: 75%;     margin: auto;">
+        <div class="img-wrapper">
+            <img class="images" src="our-team-img/julia.jpg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h2 class="singleimage_heading">Kobi Aharon</h2>
+          <h4 class="singleimg_pos">Chief Design Officer</h4>
+          <p class="singleimg_para">Kobi is our Chief Design Officer and also overlooks our multi-unit projects at Cesar NYC. He has over 20 years’ design experience, 10 years’ experience…</p>
+          <p class="more">READ MORE</p>
+        </div>
+    </div>
+  </div>
+
+<div class="div4"> 
+    <div style="width: 75%;     margin: auto;">
+        <div class="img-wrapper">
+            <img class="images" src="our-team-img/Fatima.jpg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h2 class="singleimage_heading">Kobi Aharon</h2>
+          <h4 class="singleimg_pos">Chief Design Officer</h4>
+          <p class="singleimg_para">Kobi is our Chief Design Officer and also overlooks our multi-unit projects at Cesar NYC. He has over 20 years’ design experience, 10 years’ experience…</p>
+          <p class="more">READ MORE</p>
+        </div>
+    </div>
+  </div>
+
+<div class="div5"> 
+    <div style="width: 75%;     margin: auto;">
+        <div class="img-wrapper">
+            <img class="images" src="our-team-img/Greg.jpg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h2 class="singleimage_heading">Kobi Aharon</h2>
+          <h4 class="singleimg_pos">Chief Design Officer</h4>
+          <p class="singleimg_para">Kobi is our Chief Design Officer and also overlooks our multi-unit projects at Cesar NYC. He has over 20 years’ design experience, 10 years’ experience…</p>
+          <p class="more">READ MORE</p>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="div6"> 
+    <div style="width: 75%;     margin: auto;">
+        <div class="img-wrapper">
+            <img class="images" src="our-team-img/julia.jpg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h2 class="singleimage_heading">Kobi Aharon</h2>
+          <h4 class="singleimg_pos">Chief Design Officer</h4>
+          <p class="singleimg_para">Kobi is our Chief Design Officer and also overlooks our multi-unit projects at Cesar NYC. He has over 20 years’ design experience, 10 years’ experience…</p>
+          <p class="more">READ MORE</p>
+        </div>
+    </div>
+  </div>
+    
+
+    <div class="div7"> 
+    <div style="width: 75%;     margin: auto;">
+        <div class="img-wrapper">
+            <img class="images" src="our-team-img/Mar.jpg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h2 class="singleimage_heading">Kobi Aharon</h2>
+          <h4 class="singleimg_pos">Chief Design Officer</h4>
+          <p class="singleimg_para">Kobi is our Chief Design Officer and also overlooks our multi-unit projects at Cesar NYC. He has over 20 years’ design experience, 10 years’ experience…</p>
+          <p class="more">READ MORE</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="div8"> 
+    <div style="width: 75%;     margin: auto;">
+        <div class="img-wrapper">
+            <img class="images" src="our-team-img/Masih.jpg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h2 class="singleimage_heading">Kobi Aharon</h2>
+          <h4 class="singleimg_pos">Chief Design Officer</h4>
+          <p class="singleimg_para">Kobi is our Chief Design Officer and also overlooks our multi-unit projects at Cesar NYC. He has over 20 years’ design experience, 10 years’ experience…</p>
+          <p class="more">READ MORE</p>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="div9"> 
+    <div style="width: 75%;     margin: auto;">
+        <div class="img-wrapper">
+            <img class="images" src="our-team-img/Rinat.jpg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h2 class="singleimage_heading">Kobi Aharon</h2>
+          <h4 class="singleimg_pos">Chief Design Officer</h4>
+          <p class="singleimg_para">Kobi is our Chief Design Officer and also overlooks our multi-unit projects at Cesar NYC. He has over 20 years’ design experience, 10 years’ experience…</p>
+          <p class="more">READ MORE</p>
+        </div>
+    </div>
+  </div>
+
+    <div class="div10"> 
+    <div style="width: 75%;     margin: auto;">
+        <div class="img-wrapper">
+            <img class="images" src="our-team-img/Santiago.jpg" alt="">
+        </div>
+        <div class="text-wrapper">
+          <h2 class="singleimage_heading">Kobi Aharon</h2>
+          <h4 class="singleimg_pos">Chief Design Officer</h4>
+          <p class="singleimg_para">Kobi is our Chief Design Officer and also overlooks our multi-unit projects at Cesar NYC. He has over 20 years’ design experience, 10 years’ experience…</p>
+          <p class="more">READ MORE</p>
+        </div>
+    </div>
+  </div>
+ </main>
+
+ <!-- -->
+
+
+ <!-- Contact Us-->
+ <div class="con-container">
+    <DIV class="contact-title">
+      <legend>Contact</legend>
+    </DIV>
+
+	<div class="form-container">
+  <form>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+          <input type="email" id="email" name="email" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="phone">Mobile Phone</label>
+      </div>
+      <div class="col-75">
+          <input type="number" id="phone" name="phone" >
+      </div>
+    </div>
+    <div class="row" style="margin-right: 130px;
+    padding: 5px;">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+		
+  </div><!-- Contact US-->
+
+  <!-- footer open -->
+         <footer class="grid-footer">
+            <div class="item1 footer-column">
+                <div class="textwidget">
+                  <p><strong>Italian Kitchen Showroom<br />
+                        Flagship Store</strong><br />
+                        50 West 23rd Street<br />
+                        New York, NY 10010</p>
+                </div>
+            </div>
+      
+              <div class="item2 footer-column">
+                  <div class="textwidget">
+                    <p>For appointments please<br />
+                    call: 212.505.2000<br />
+                      Email: info@ceasync.com</a>
+                  </p>
+                </div>
+              </div>
+      
+              <div class="item3 footer-column">
+                <div class="textwidget">
+                  <p><strong>Showroom Hours</strong><br />
+                    Mon &#8211; Fri 10AM-7PM<br />
+                    Sat &#038; Sun 11AM-6PM</p>
+              </div>
+      
+              </div>  
+      
+              <div class="item4 footer-column">
+                <div class="textwidget subscriber-widget">
+                  <div id="social" class="row-widget4">
+                    <a href="#" target="_blank" id="social_facebook">
+                    <img src="images/facebook.png" alt="Facebook">
+                  </a>
+                  <a href="#" target="_blank" id="social_twitter">
+                    <img src="images/twitter.png" alt="twitter">
+                  </a>
+                  <a href="#" target="_blank" id="social_instagram">
+                    <img src="images/instagram.png" alt="Instagram">
+                  </a>
+                  <a href="#" target="_blank" id="social_pinterest">
+                    <img src="images/pinterest.png" alt="pinterest">
+                  </a>
+                  <a href="#" target="_blank" id="social_houzz">
+                    <img src="images/houzz.png" alt="houzz">
+                  </a>
+                  <a href="#" target="_blank" id="social_youtube">
+                    <img src="images/youtube.png" alt="youtube">
+                  </a>
+                  </div>
+      
+                <form class="form-control row-widget4" action="">
+                    <strong>Subscribe to our newsletter</strong>
+                    <input id="footer-email" class="form-control" name="email" required="required" type="email" placeholder="Enter your email" />
+              </form>
+                </div>
+              </div>
+            
+            <div class="item5 footer-column">
+            <p>
+            <small> Copyright &copy; 2019, Butwal Web, All rights reserved.
+              <a href="#">Terms of Use</a> 
+              <a href="#">Privacy Policy- RESERVED</a></small>
+              </p>
+            </div>
+        </footer>
+        <!-- footer close -->
+
+  </div>
+  
+<script src="js/menu.js"></script>
+
+</body>
+</html>

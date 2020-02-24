@@ -1,0 +1,237 @@
+
+ a{
+    color: black;
+}
+
+a:hover{
+    color: grey;
+    text-decoration: none;
+}
+
+
+ 
+         
+
+    
+
+/* paragraph to grid-image first  */
+
+    .text-wrapper{
+        width: 80%;
+        margin: auto;
+    }
+
+    .text-container{
+        margin-bottom: 35px;
+    }
+
+    h1, h2{
+        margin-top: 15px;
+        font-weight: 400;
+        margin:25px;
+    }
+
+    h1{
+        font-size:25px;
+    }
+
+    .morden {
+        margin-bottom: 0px !important;
+        line-height: 1.5;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+    
+    .para_wrapper{
+        margin-top: -20px;
+    }
+
+    p{
+        font-size: 16px;
+        text-align: left;
+        margin:25px;   
+       }
+    
+    .row{
+    height: 1px;
+    margin: 25px;
+    border-top: 1px solid #ebebeb;;
+    margin-bottom: 35px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    }
+
+    .picture-and-text-container{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns:auto auto auto;
+        /*grid-gap: 20px;*/
+        justify-content: space-around;
+    }
+    .singleimage_heading{
+    font-size: 30px;
+    text-align: center;
+    
+    }
+
+    .images{
+        width: 360px;
+        height: 207px;
+      }
+/* paragraph to grid-image first  close */
+
+ /* portfolio-container start */
+.portfolio-container{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    justify-content: center;
+  }
+
+.portfolio-img{
+    width: 310px;
+    height: 360px;
+    margin: 5px;
+}
+
+
+
+
+
+
+  /* Clear floats after the columns */
+.row1:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  
+
+
+
+  
+
+
+
+  @media screen and (max-width: 600px) {
+
+    *{
+        padding:    0px;
+        margin:     0px;
+        box-sizing: border-box; 
+        /* overflow: hidden; */
+     }
+     /* .slideshow-container {
+        width: 135%;
+        margin: auto;
+    } */
+
+    .form-container {
+    width: 60%;
+    margin-left: 100px;
+    padding: 10px;
+  }
+    .col-25, .col-75, input[type=submit] {
+      width: 80%;
+      margin-top: 0;
+    }
+
+
+  }
+
+
+ 
+@media screen and (max-width: 1000px){
+   
+
+
+    /* .slideshow-container {
+        width: 135%;
+        margin: auto;
+    } */
+
+.picture-and-text-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    text-align: center;
+    }
+
+ /* portfolio-container start in mobile view*/
+
+    .portfolio-container {
+        display: grid;
+        grid-template-columns: auto auto ;
+        justify-content: center;
+      }
+    
+      .portfolio-img{
+      width: 320px;
+      height: 320px;
+      margin: 5px;
+      }
+    
+}
+
+@media screen and (max-width:768px) {
+          
+    .text-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+  
+
+    .slideshow-container {
+        width: 100%;
+        margin: auto;
+    }
+
+                   
+
+
+                            /* paragraph to grid-image first in mobile view */
+
+                                .picture-and-text-container {
+                                    /* display: grid;
+                                    grid-template-columns: auto;
+                                    text-align: center; */
+                                    
+                                    width: 100%;
+                                    display: grid;
+                                    grid-template-columns: auto;
+                                    /* margin: auto; */
+                                  /* text-align: center; */
+                                  }
+
+                                  .singleimage_heading{
+                                    font-size: 20px;
+                                      }
+                            /* paragraph to grid-image first in mobile view close*/
+
+
+                            /* portfolio-container start in mobile view*/
+                                      
+                            .portfolio-container {
+                                width: 100%;
+                                display: grid;
+                                grid-template-columns: auto;
+                                justify-content: center;
+                              }
+                            
+                              .portfolio-img{
+                              width: 280px;
+                              height: 280px;
+                              margin: 5px;
+                              }
+                            /* portfolio-container close in mobile view*/
+
+                            
+                            
+                        }

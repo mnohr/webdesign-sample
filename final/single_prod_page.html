@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/breadcumb.css">
+    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/footer.css">
+	<style type="text/css">
+
+    *{ 
+      margin: 0; 
+      padding: 0; 
+    }
+
+		.clearfix:after {
+    content:"\0020";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+    overflow:hidden;
+}
+ 
+.clearfix {
+    display:block;
+    width: 75%; 
+    margin: auto;
+}
+
+.title{
+  margin: 5px;
+  margin-bottom: 11px;
+  margin-top: 10px;
+}
+
+.textbb {
+    margin: 5px;
+    width: auto;
+} 
+
+.paragraph{
+  text-align: left;
+  font-size: 16px; 
+  margin: 10px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+a{
+  color: black;
+}
+
+a:hover{
+  text-decoration: none;
+  color: grey;
+}
+
+
+/*GRID IMAGES*/
+
+.portfolio-container{
+ width: 100%;
+ margin: auto;
+ display: grid;
+ grid-template-columns:auto auto auto;
+ justify-content: center;
+
+ }
+
+.portfolio-img{
+  width: 330px;
+  height: 375px;
+  margin-left: 1px;
+  margin-top: -3px;
+}
+
+
+@media screen and (max-width: 1000px){
+.portfolio-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-content: center;
+  }
+
+  .portfolio-img{
+  width: 320px;
+  height: 320px;
+  margin: 2px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+.portfolio-container {
+  /*background-color: green;*/
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .portfolio-img{
+  width: 280px;
+  height: auto;
+  margin: 2px;
+}
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+legend{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+	</style>
+
+</head>
+<body>
+
+	<div class="container-all">
+
+
+    <!-- navigation header  -->
+         <div class="second-row">
+                    <nav class="navbar navbar-custom nav-border">    
+                        <div class="header-title">
+                            <a class="site-brand" href="index.html"><img class="header-logo-img" src="images/Website-Logo.jpg" alt="logo"></a>
+                        </div>
+                        
+                        <!-- <div class="nav-menusfa"> -->
+                        <ul class="nav-menu">    
+                            <li class="main-list"><a href="index.html">Home</a></li>
+                            <li class="open-dropdown menu1 "><a class="menu-link" href="about-us.html">About Us</a>
+                                <ul class="dropdown-menu dropdown-content dropdown dropdown-list1 "  >
+                                    <li class="menu-item "><a href="our-team.html">Our Team</a></li>
+                                    <li class="menu-item "><a href="about-us.html" >About Us</a></li>
+                                    <li class="menu-item "><a href="our-products.html" >Kitchen Showroom</a></li>
+                                    <li class="menu-item "><a href="single_prod_page.html" >Design + Production</a></li>
+                                    <li class="menu-item "><a href="customer_review.html" >Customer Reviews</a></li>
+                                </ul>
+                            </li>
+                            <li class="open-dropdown menu2 "><a class="menu-link2" href="#">Sample</a>
+                                <ul class="dropdown-menu dropdown-content dropdown dropdown-list2"  >
+                                    <li class="menu-item "><a href="our-team.html">Our Team</a></li>
+                                    <li class="menu-item "><a href="about-us.html" >About</a></li>
+                                    <li class="menu-item "><a href="our-products.html" >Kitchen Sho</a></li>
+                                    <li class="menu-item "><a href="single_prod_page.html" >Design + Pro</a></li>
+                                    <li class="menu-item "><a href="customer_review.html" >Customer Reviews</a></li>
+                                </ul>
+                            </li>
+                            <li class="open-dropdown menu3 "><a  class="menu-link3" href="#">Portfolio</a>
+                                <ul class="dropdown-menu dropdown-content dropdown dropdown-list3"  >
+                                    <li class="menu-item "><a href="our-team.html"> Our Team</a></li>
+                                    <li class="menu-item "><a href="about-us.html" >About Us</a></li>
+                                    <li class="menu-item "><a href="our-products.html" >Kitchen Showroom</a></li>
+                                    <li class="menu-item "><a href="single_prod_page.html" >Design Production</a></li>
+                                    <li class="menu-item "><a href="customer_review.html" >Customer Reviews</a></li>
+                                </ul>
+                            </li>
+                            <li class="open-dropdown menu4 "><a class="menu-link4" href="#">News</a>
+                                <ul class="dropdown-menu dropdown-content dropdown dropdown-list4"  >
+                                    <li class="menu-item "><a href="our-team.html" > Team</a></li>
+                                    <li class="menu-item "><a href="about-us.html" >About Us</a></li>
+                                    <li class="menu-item "><a href="our-products.html" > Showroom</a></li>
+                                    <li class="menu-item "><a href="single_prod_page.html" >Production</a></li>
+                                    <li class="menu-item "><a href="customer_review.html" >Customer Reviews</a></li>
+                                </ul>
+                            </li>
+                            <li class="open-dropdown menu5 " > <a class="menu-link5" href="#">Contact</a>
+                                <ul class="dropdown-menu dropdown-content dropdown dropdown-list5">
+                                    <li class="menu-item"><a href="#" >Contact Us</a></li>
+                                    <li class="menu-item "><a href="#" >Other Sample</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+              <!-- </div> -->
+            </nav>
+
+            <nav class="navbar-mob">
+              <div class="menu-btn">  
+                <!-- <i class="fa fa-bars" id="bar">menu</i> -->
+                <img class="fa-bars"  id="bar" src="images/bars-solid.svg" alt="bar-icon">
+                <!-- <i class="fa fa-times" id="cross">cancel</i> -->
+                <img  class="fa-times" id="cross" src="images/times-solid.svg" alt="cross-bar">
+            </div>
+            </nav>
+        </div>
+        <!-- navigation header  close-->
+
+
+
+        <div class="top-image-wrapper">
+            <img src="images/room.jpg" alt="room-image" style="width:100%; "> 
+            <div class="header-image-text-first">SINGLE PRODUCT PAGE</div>
+            <div class="header-image-text-second">CESAR NYC KITCHENS</div>
+        </div>
+
+        
+		<div class="clearfix">
+			<h2 class="title">Cesar N_Elle Modern Kitchen in Oak</h2>
+		
+		<p class="paragraph">Kitchen Model: Cesar N_Elle // Kitchen Style: Modern Italian Kitchen Cabinets // Kitchen Designer & Manufacturer: Cesar // Kitchen Cabinet Finishes & Materials: Heat-Treated Oak // Base Unit Doors: Heat-Treated Oak // Kitchen Handles: cabinet doors with Grip Recess Edging // Kitchen Countertop: Jaipur Time Composite, top with a 45 degree incorporated and Grip Recess Edging // Food Preparation Unit: Peninsular, Heat-Treated Oak Wood</p>
+    <p class="paragraph" style="margin-bottom: 15px;"><a href="#">Back To All N_Elle Kitchens</a></p>
+		</div>
+
+    <!-- Grid Images -->
+    <main class="portfolio-container">
+  <div class="div1"> 
+      <img src="single-prod-page-img/img1.jpg" class="portfolio-img" alt="">
+  </div>
+    <div class="div2">
+      <img src="single-prod-page-img/img-2.jpg" class="portfolio-img" alt="">
+    </div>
+    <div class="div3"> 
+      <img src="single-prod-page-img/img-3.jpg" class="portfolio-img" alt="">
+    </div>
+    <div class="div4">
+      <img src="single-prod-page-img/img-4.jpg" class="portfolio-img" alt=""> 
+    </div>
+  <div class="div5"> 
+      <img src="single-prod-page-img/img-5.jpg" class="portfolio-img" alt="">
+  </div>
+  <div class="div6"> 
+      <img src="single-prod-page-img/img-6.jpg" class="portfolio-img" alt="">
+  </div>
+  <div class="div7"> 
+      <img src="single-prod-page-img/img-7.jpg" class="portfolio-img" alt="">
+  </div>
+
+ </main>
+
+ <!-- -->
+ <div class="container">
+    <div class="clearfix">
+      <h2 class="title">Cesar N_Elle Kitchen Characteristics</h2>
+    
+    <p class="paragraph">If strong, bold colors are your style and individual taste, look no further. Heat-treated oak is one of the most innovative kitchen materials and cabinet finishes in today’s international kitchen design industry and one of the major kitchen trends you can find in NYC, same as worldwide. The above kitchen makes use of this trend, by using heat-treated oak throughout the whole kitchen space. The reason why it is so dark is because when oak wood gets treated with heat, its color naturally changes. To create a sleek, minimalistic look, it was decided to use no kitchen handles for this residential kitchen project, but to open the cabinetry via so-called grip recessed edges instead. To create a slight contrast, the kitchen countertop is made of a white Jaipur Time Composite finish, which is a durable material that ensures that the kitchen isn’t just beautiful to look at, but also fulfils its purpose of looking the same, new way for years to come.</p>
+
+
+    <div class="big-img">
+      <img src="single-prod-page-img/big-img-1.jpg" alt="" 
+      style="height: auto;  width: 100%;">
+    </div>
+    </div>
+
+  </div>
+
+  <div class="clearfix">
+      <h2 class="title">N_Elle Kitchen Design Features</h2>
+    
+    <p class="paragraph">The above N_Elle kitchen model is the desired kitchen choice of many of our clients, including architects and interior designers. Literally any design detail and kitchen finish can be created and designed according to your specifications. If you like handle-less kitchen designs, be aware that our kitchen feature opening solution called “grip recess” is available with 30 degree and 45 degree edges, which are directly included into the kitchen cabinet doors. What is very nicely designed with this specific modern kitchen model is the kitchen table that is integrated into the kitchen island, hence creating an L-shaped freestanding kitchen layout, where the wooden table lies on top of the kitchen island’s white countertop. To find out more about our Cesar N_Elle kitchen line and all customization options, visit our Cesar NYC kitchen flagship showroom in Flatiron District, Manhattan, NYC, where our kitchen design team is happy to introduce you into our 50 year old kitchen design heritage and assist you making your individual kitchen design dream come true.</p>
+    </div>
+
+
+    <DIV class="contact-title">
+      <legend></legend>
+    </DIV>
+
+
+      <!-- footer open -->
+         <footer class="grid-footer">
+            <div class="item1 footer-column">
+                <div class="textwidget">
+                  <p><strong>Italian Kitchen Showroom<br />
+                        Flagship Store</strong><br />
+                        50 West 23rd Street<br />
+                        New York, NY 10010</p>
+                </div>
+            </div>
+      
+              <div class="item2 footer-column">
+                  <div class="textwidget">
+                    <p>For appointments please<br />
+                    call: 212.505.2000<br />
+                      Email: info@ceasync.com</a>
+                  </p>
+                </div>
+              </div>
+      
+              <div class="item3 footer-column">
+                <div class="textwidget">
+                  <p><strong>Showroom Hours</strong><br />
+                    Mon &#8211; Fri 10AM-7PM<br />
+                    Sat &#038; Sun 11AM-6PM</p>
+              </div>
+      
+              </div>  
+      
+              <div class="item4 footer-column">
+                <div class="textwidget subscriber-widget">
+                  <div id="social" class="row-widget4">
+                    <a href="#" target="_blank" id="social_facebook">
+                    <img src="images/facebook.png" alt="Facebook">
+                  </a>
+                  <a href="#" target="_blank" id="social_twitter">
+                    <img src="images/twitter.png" alt="twitter">
+                  </a>
+                  <a href="#" target="_blank" id="social_instagram">
+                    <img src="images/instagram.png" alt="Instagram">
+                  </a>
+                  <a href="#" target="_blank" id="social_pinterest">
+                    <img src="images/pinterest.png" alt="pinterest">
+                  </a>
+                  <a href="#" target="_blank" id="social_houzz">
+                    <img src="images/houzz.png" alt="houzz">
+                  </a>
+                  <a href="#" target="_blank" id="social_youtube">
+                    <img src="images/youtube.png" alt="youtube">
+                  </a>
+                  </div>
+      
+                <form class="form-control row-widget4" action="">
+                    <strong>Subscribe to our newsletter</strong>
+                    <input id="footer-email" class="form-control" name="email" required="required" type="email" placeholder="Enter your email" />
+              </form>
+                </div>
+              </div>
+            
+            <div class="item5 footer-column">
+            <p>
+            <small> Copyright &copy; 2019, Butwal Web, All rights reserved.
+              <a href="#">Terms of Use</a> 
+              <a href="#">Privacy Policy- RESERVED</a></small>
+              </p>
+            </div>
+        </footer>
+        <!-- footer close -->
+	</div>
+  <script src="js/menu.js"></script>
+
+</body>
+</html>
