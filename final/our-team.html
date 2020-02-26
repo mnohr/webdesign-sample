@@ -119,7 +119,7 @@
 
 
 /*Contact Us*/
-
+/* 
 * {
   box-sizing: border-box;
 }
@@ -149,7 +149,7 @@ input[type=text], input[type="number"], input[type="email"] {
 
 
 /*WebKit desktop browsers add little up down arrows to number inputs called spinners. You can turn them off visually like this:*/
-input[type=number]::-webkit-inner-spin-button, 
+/* input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
@@ -187,10 +187,10 @@ input[type=submit] {
   float: left;
   width: 75%;
   margin-top: 6px;
-}
+} */
 
 /* Clear floats after the columns */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
@@ -207,10 +207,11 @@ input[type=submit] {
     width: 80%;
     margin-top: 0;
   }
-}
+} */
 
-  </style>
-  
+  </style> 
+
+  <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
@@ -287,7 +288,7 @@ input[type=submit] {
 
 
 
-        <div class="top-image-wrapper">
+        <div class="top-image-wrapper" style="margin-bottom: 25px;" >
             <img src="images/room.jpg" alt="room-image" style="width:100%; "> 
             <div class="header-image-text-first">OUR TEAM</div>
             <div class="header-image-text-second">CESAR NYC KITCHENS</div>
@@ -450,11 +451,10 @@ input[type=submit] {
 
  <!-- Contact Us-->
  <div class="con-container">
-    <DIV class="contact-title">
-      <legend>Contact</legend>
-    </DIV>
-
-	<div class="form-container">
+    	<div class="form-container">
+        <DIV class="contact-title">
+          <legend>Contact</legend>
+        </DIV>
   <form>
     <div class="row">
       <div class="col-25">

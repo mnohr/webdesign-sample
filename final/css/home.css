@@ -133,15 +133,7 @@ a:hover{
         margin: auto;
     } */
 
-    .form-container {
-    width: 60%;
-    margin-left: 100px;
-    padding: 10px;
-  }
-    .col-25, .col-75, input[type=submit] {
-      width: 80%;
-      margin-top: 0;
-    }
+    
 
 
   }
