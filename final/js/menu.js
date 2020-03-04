@@ -78,6 +78,7 @@ function showMenu(){
     crossBtn.style.display = "block";
     navbarMob.classList.remove('navbar');
     navbarMob.classList.add('navbar-mob');
+    DropdownDownList1.classList.toggle('.menu1');
     
 }
 
